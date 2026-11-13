@@ -34,6 +34,20 @@ Excluded material includes the private catalogue, mirrored research collections,
 
 Read [RIGHTS.md](RIGHTS.md) before reuse. Original prose and catalogue material retain reserved rights. Public readability does not create a blanket open-content licence. The code licence applies only within its stated scope.
 
+## Related software example
+
+[Colibri Atlas: Evidence Replay 0.1.0a1](https://github.com/Albertito-AI/colibri-atlas/tree/main/examples/atlas_evidence) is a separate public
+prototype that retains a local candidate response and its supplied source
+snapshots, checks quotation spans, optionally rechecks policy through Atlas
+Reweave and exports a RegNav Source Watch manifest with `context` relations.
+It is linked for inspection; its code and generated captures are not included in
+this methods edition or its three-record reference catalogue.
+
+The [validation record](https://github.com/Albertito-AI/colibri-atlas/blob/main/examples/atlas_evidence/VALIDATION.md) reports **48 tests passed, zero skips**,
+including Colibri's actual HTTP gateway with a scripted engine double.
+Real-model quality remains untested. Literal agreement and hash consistency do
+not establish semantic support, source authenticity or scholarly quality.
+
 ## Citation and limitations
 
 Use [CITATION.cff](CITATION.cff) for the title, author and version. The exact citation identifier can be added after deposit publication; no DOI is asserted in this source package.
