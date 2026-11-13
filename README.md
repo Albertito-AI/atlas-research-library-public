@@ -43,6 +43,8 @@ Reweave and exports a RegNav Source Watch manifest with `context` relations.
 It is linked for inspection; its code and generated captures are not included in
 this methods edition or its three-record reference catalogue.
 
+Archived related software release: [Evidence Replay 0.1.0a1 (public prototype)](https://doi.org/10.5281/zenodo.24206408).
+
 The [validation record](https://github.com/Albertito-AI/colibri-atlas/blob/main/examples/atlas_evidence/VALIDATION.md) reports **48 tests passed, zero skips**,
 including Colibri's actual HTTP gateway with a scripted engine double.
 Real-model quality remains untested. Literal agreement and hash consistency do
