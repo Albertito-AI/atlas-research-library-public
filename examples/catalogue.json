@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "fictional-catalogue-exercise",
+      "title": "Fictional catalogue exercise",
+      "format": "md",
+      "path": "examples/sample-note.md",
+      "external_url": null,
+      "sha256": "f1d0909fb2112205452fcb7f30111db1ab9a3af551908868f567c086e901e1c8",
+      "source_url": null,
+      "source_commit": null,
+      "licence": "Original fictional example, reserved rights; see RIGHTS.md.",
+      "access": "members",
+      "status": "integrity-checked",
+      "description": "Elementary arithmetic note created for this public edition solely to demonstrate local file integrity checks. The legacy members label creates no access entitlement.",
+      "rights_basis": "owned-original",
+      "verification_note": "The local SHA-256 was measured from included bytes. This status does not record independent substantive review."
+    }
+  ]
+}

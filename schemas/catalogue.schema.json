@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Albertito-AI/atlas-research-library/blob/main/schemas/catalogue.schema.json",
+  "title": "Atlas Research Library catalogue",
+  "description": "Catalogue structure. The local validator additionally checks path boundaries, file extensions and local SHA-256 values. Status does not establish mathematical truth or legal rights.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "entries"],
+  "properties": {
+    "schema_version": {"const": 1, "type": "integer"},
+    "entries": {
+      "type": "array",
+      "maxItems": 10000,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "title", "format", "path", "external_url", "sha256", "source_url", "source_commit", "licence", "access", "status", "description"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z][a-z0-9_-]{0,79}$"},
+          "title": {"type": "string", "minLength": 1, "maxLength": 2000},
+          "format": {"enum": ["md", "txt", "html", "docx", "pdf", "csv", "json", "jsonl", "xlsx", "lean", "ipynb", "py", "zip", "video", "audio", "image"]},
+          "path": {"type": ["string", "null"], "minLength": 1, "maxLength": 500, "description": "Safe local relative POSIX path. No hidden components, traversal or symlinks."},
+          "external_url": {"type": ["string", "null"], "pattern": "^https://", "maxLength": 4096},
+          "sha256": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+          "source_url": {"type": ["string", "null"], "pattern": "^https://", "maxLength": 4096},
+          "source_commit": {"type": ["string", "null"], "pattern": "^[a-f0-9]{40}$"},
+          "licence": {"type": "string", "minLength": 1, "maxLength": 2000},
+          "access": {"enum": ["members", "public-source"], "description": "Intended distribution audience or public origin; does not activate membership."},
+          "status": {"enum": ["working-draft", "reference", "integrity-checked", "reviewed"]},
+          "description": {"type": "string", "minLength": 1, "maxLength": 2000},
+          "rights_basis": {"enum": ["open-licence", "owned-original", "permission-recorded", "link-only"]},
+          "verification_note": {"type": "string", "minLength": 1, "maxLength": 4000}
+        },
+        "oneOf": [
+          {"properties": {"path": {"type": "string"}, "external_url": {"type": "null"}, "sha256": {"type": "string"}}},
+          {"properties": {"path": {"type": "null"}, "external_url": {"type": "string"}}}
+        ],
+        "allOf": [
+          {"if": {"properties": {"status": {"const": "reviewed"}}}, "then": {"required": ["verification_note"]}},
+          {"if": {"properties": {"access": {"const": "public-source"}}}, "then": {"properties": {"source_url": {"type": "string"}}}},
+          {"if": {"properties": {"source_commit": {"type": "string"}}}, "then": {"properties": {"source_url": {"type": "string"}}}},
+          {"if": {"properties": {"external_url": {"type": "string"}, "status": {"enum": ["integrity-checked", "reviewed"]}}}, "then": {"properties": {"sha256": {"type": "string"}}}},
+          {"if": {"required": ["rights_basis"], "properties": {"rights_basis": {"const": "link-only"}}}, "then": {"properties": {"path": {"type": "null"}, "external_url": {"type": "string"}}}}
+        ]
+      }
+    }
+  }
+}

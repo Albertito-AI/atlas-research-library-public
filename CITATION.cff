@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you cite this selected methods edition, cite this version and its published archival identifier when available."
+type: software
+title: "Atlas Research Library: Curation and Preservation Methods"
+version: "1.0.0"
+date-released: "2026-11-13"
+repository-code: "https://github.com/Albertito-AI/atlas-research-library-public"
+url: "https://github.com/Albertito-AI/atlas-research-library-public"
+authors:
+  - family-names: "Tan"
+    given-names: "Sin Hon Albert"
+    orcid: "https://orcid.org/0009-0001-8996-7933"
+abstract: "A selected public methods edition comprising research curation and preservation guidance, a catalogue schema, an offline metadata and byte-integrity validator, regression tests, three link-only public references and a fictional worked example. The private source collection is excluded. Tests establish implemented checks rather than mathematical truth, scholarly review or rights clearance."
+keywords:
+  - "research curation"
+  - "provenance"
+  - "digital preservation"
+  - "research software"
+  - "metadata validation"

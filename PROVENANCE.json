@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "title": "Atlas Research Library: Curation and Preservation Methods",
+  "version": "1.0.0",
+  "date": "2026-11-13",
+  "creator": {
+    "name": "Tan, Sin Hon Albert",
+    "orcid": "https://orcid.org/0009-0001-8996-7933"
+  },
+  "source_repository": "https://github.com/Albertito-AI/atlas-research-library",
+  "source_repository_access": "private",
+  "source_commit": "123f1a90cbc61b4b994acddec2689c1256d93755",
+  "scope": "Selected public methods edition; private collection, full catalogue and Git history excluded.",
+  "source_files": [
+    {
+      "source_path": "LICENSE-CODE",
+      "source_blob_sha1": "a3dc358029e769474b949403dffc10838e3b4630",
+      "edition_path": "LICENSE-CODE",
+      "relation": "verbatim"
+    },
+    {
+      "source_path": "schemas/catalogue.schema.json",
+      "source_blob_sha1": "d09bd161701e245c62296936dfb5b4fc5e046c9b",
+      "edition_path": "schemas/catalogue.schema.json",
+      "relation": "verbatim"
+    },
+    {
+      "source_path": "scripts/validate_library.py",
+      "source_blob_sha1": "8b5d672b1f8957f4debfc4b425a83a7ce9277e60",
+      "edition_path": "scripts/validate_library.py",
+      "relation": "verbatim"
+    },
+    {
+      "source_path": "tests/test_library.py",
+      "source_blob_sha1": "bae735e0680b4961b5c2a817419fdcbe7486ab36",
+      "edition_path": "tests/test_library.py",
+      "relation": "verbatim"
+    },
+    {
+      "source_path": "data/seed_references.json",
+      "source_blob_sha1": "8e922766e202d29bf790cfbae505e5b372332037",
+      "edition_path": "data/catalogue.json",
+      "relation": "verbatim"
+    }
+  ],
+  "adapted_document_sources": [
+    {
+      "path": "README.md",
+      "blob": "6332b15e6c622d8abce908c39b61dac230dfa6b3"
+    },
+    {
+      "path": "docs/FORMATS_AND_PRESERVATION.md",
+      "blob": "b0f93926d7d6ce37ff5a185d716db3087c596ec4"
+    },
+    {
+      "path": "docs/RIGHTS_AND_PROVENANCE.md",
+      "blob": "2750c66e1d53127613758560dcb151f00b8f4e28"
+    },
+    {
+      "path": "docs/OPERATOR_CHECKLIST.md",
+      "blob": "e47efdcef8c707020cf44380504978c93320f91f"
+    }
+  ],
+  "new_for_edition": [
+    "README.md",
+    "RIGHTS.md",
+    "CITATION.cff",
+    "docs/METHODS.md",
+    "examples/README.md",
+    "examples/sample-note.md",
+    "examples/catalogue.json",
+    "scripts/verify_manifest.py",
+    "VALIDATION.md",
+    ".gitignore"
+  ],
+  "manifest_exclusions": [
+    "PROVENANCE.json (self-reference)",
+    ".git/** (Git administration)",
+    "**/__pycache__/** and *.pyc (generated Python caches)"
+  ],
+  "edition_files": [
+    {
+      "path": ".gitignore",
+      "size": 29,
+      "sha256": "60c9bdd905fcf45ac485c680d32e9773962cf061b6f041dcddd033911558a672"
+    },
+    {
+      "path": "CITATION.cff",
+      "size": 1072,
+      "sha256": "947611e500dda247801e067becc7f07529c52fcbf45ba770dd4a87aff1030a44"
+    },
+    {
+      "path": "LICENSE-CODE",
+      "size": 1282,
+      "sha256": "fd07fc2a6b944eca74261d76c26b92094770b4564a3c67ba9896f732d4ff037a"
+    },
+    {
+      "path": "README.md",
+      "size": 3714,
+      "sha256": "22aa46cfe60a1b219025f53173ed3dd2165d8a7dca9e7e68dd581461e54915a5"
+    },
+    {
+      "path": "RIGHTS.md",
+      "size": 1843,
+      "sha256": "21c4f9d6e8bc8a80c8620a438130bb4d4410440d770fc0f40dc33b441a51dfa0"
+    },
+    {
+      "path": "VALIDATION.md",
+      "size": 2206,
+      "sha256": "14f2fe65b9806c1b6efc182f35972bb03c4faf31cef2ad005266752edcc3f6e7"
+    },
+    {
+      "path": "data/catalogue.json",
+      "size": 2198,
+      "sha256": "58568b05efe6a50bcf2ceff1c79a76eda4546aea3c70c3a265f894b2424aef80"
+    },
+    {
+      "path": "docs/METHODS.md",
+      "size": 10112,
+      "sha256": "c2a9c2a276adebd377fb1f3e5c708514bf6eb1cb0d0e1b990d7ce93911566e6e"
+    },
+    {
+      "path": "examples/README.md",
+      "size": 1551,
+      "sha256": "3c78063310f48dbeed7033f8c60875e3853a734d3a4648fbf67d37c53d0e69e8"
+    },
+    {
+      "path": "examples/catalogue.json",
+      "size": 894,
+      "sha256": "3f329714ec9aa512b3a360f544a1ab158bc542260eeaa4074f61f0efd289278e"
+    },
+    {
+      "path": "examples/sample-note.md",
+      "size": 451,
+      "sha256": "f1d0909fb2112205452fcb7f30111db1ab9a3af551908868f567c086e901e1c8"
+    },
+    {
+      "path": "schemas/catalogue.schema.json",
+      "size": 3419,
+      "sha256": "8184c9c09e016c6ae1f5fd16b72d9a02fcf1ca456a40765bb06573561711aaf2"
+    },
+    {
+      "path": "scripts/validate_library.py",
+      "size": 8893,
+      "sha256": "13a351b2a2ce38a5026b9621a5ba3d2b9d1a387d9b6fc7143b26c1ac1c58477b"
+    },
+    {
+      "path": "scripts/verify_manifest.py",
+      "size": 1785,
+      "sha256": "c0ee4fd28a4b536b489ddecf71aabffa8872474fa76bd1a5daa4336ab659be2b"
+    },
+    {
+      "path": "tests/test_library.py",
+      "size": 5670,
+      "sha256": "38a664ca5a552579b4cab46d30a397c5120bd2bdd7bcd5bc61764391e50120ae"
+    }
+  ],
+  "publication_repository": "https://github.com/Albertito-AI/atlas-research-library-public"
+}

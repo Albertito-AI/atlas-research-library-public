@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "public-atlas-open-mathematics",
+      "title": "Atlas Open Mathematics public project",
+      "format": "html",
+      "path": null,
+      "external_url": "https://github.com/Albertito-AI/atlas-open-mathematics",
+      "sha256": null,
+      "source_url": "https://github.com/Albertito-AI/atlas-open-mathematics",
+      "source_commit": null,
+      "licence": "Repository resources retain their individual source licences; this entry is a link only.",
+      "access": "public-source",
+      "status": "reference",
+      "description": "Entry point for the public research code, evidence and teaching resources. Pin an exact commit and measure checksums before mirroring selected files.",
+      "rights_basis": "link-only"
+    },
+    {
+      "id": "public-atlas-opsbook",
+      "title": "Atlas Opsbook public project",
+      "format": "html",
+      "path": null,
+      "external_url": "https://github.com/Albertito-AI/atlas-opsbook",
+      "sha256": null,
+      "source_url": "https://github.com/Albertito-AI/atlas-opsbook",
+      "source_commit": null,
+      "licence": "Original Opsbook code is MIT; upstream material retains its separate notices. This entry is a link only.",
+      "access": "public-source",
+      "status": "reference",
+      "description": "Procedural learning and replay-tested project manuals. Public rights remain available independently of library membership.",
+      "rights_basis": "link-only"
+    },
+    {
+      "id": "public-human-question",
+      "title": "The Human Question journal",
+      "format": "html",
+      "path": null,
+      "external_url": "https://thehumanquestionjournal.com/",
+      "sha256": null,
+      "source_url": "https://thehumanquestionjournal.com/",
+      "source_commit": null,
+      "licence": "Journal articles and website resources retain their own licences. Link only; no permission to redistribute articles in a paid collection is inferred.",
+      "access": "public-source",
+      "status": "reference",
+      "description": "Public journal information, policies and reading resources. Membership confers no publication preference.",
+      "rights_basis": "link-only"
+    }
+  ]
+}
