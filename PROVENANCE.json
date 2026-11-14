@@ -80,6 +80,11 @@
   ],
   "edition_files": [
     {
+      "path": ".github/workflows/atlas-flexible-zero-fail.yml",
+      "sha256": "a994fbfd057daae40b1c94234b7a273c5ff6bcc276015f217ec33a0d2453eb06",
+      "size": 383
+    },
+    {
       "path": ".gitignore",
       "size": 29,
       "sha256": "60c9bdd905fcf45ac485c680d32e9773962cf061b6f041dcddd033911558a672"
