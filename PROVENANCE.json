@@ -72,7 +72,8 @@
     "scripts/verify_manifest.py",
     "VALIDATION.md",
     ".gitignore",
-    ".github/workflows/native-validation.yml"
+    ".github/workflows/native-validation.yml",
+    "tests/test_manifest.py"
   ],
   "manifest_exclusions": [
     "PROVENANCE.json (self-reference)",
@@ -157,13 +158,18 @@
     },
     {
       "path": "scripts/verify_manifest.py",
-      "size": 1785,
-      "sha256": "c0ee4fd28a4b536b489ddecf71aabffa8872474fa76bd1a5daa4336ab659be2b"
+      "size": 2083,
+      "sha256": "488acba7a154bf2bb3420607344a864e007f68de541e0168aad0f15f4e6ec286"
     },
     {
       "path": "tests/test_library.py",
       "size": 5670,
       "sha256": "38a664ca5a552579b4cab46d30a397c5120bd2bdd7bcd5bc61764391e50120ae"
+    },
+    {
+      "path": "tests/test_manifest.py",
+      "size": 4813,
+      "sha256": "2f488445e7e8a1cd910ff3861aed9a2853dc83c6353b55ba24a051a2b6207612"
     }
   ],
   "publication_repository": "https://github.com/Albertito-AI/atlas-research-library-public"

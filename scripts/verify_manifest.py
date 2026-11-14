@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check the public edition's file inventory and SHA-256 values, without network access.
+"""Check the public edition's file inventory, sizes and SHA-256 values, without network access.
 
 Copyright (c) 2026 Albert Tan Sin Hon. MIT licence: see LICENSE-CODE.
 """
@@ -35,7 +35,13 @@ def main() -> int:
         target = root / path
         if target.is_symlink() or not target.resolve().is_relative_to(root):
             raise ValueError("symlink or escaped path")
-        measured = hashlib.sha256(target.read_bytes()).hexdigest()
+        declared_size = item.get("size")
+        if type(declared_size) is not int or declared_size < 0:
+            raise ValueError(f"invalid declared size: {path}")
+        payload = target.read_bytes()
+        if len(payload) != declared_size:
+            raise ValueError(f"size mismatch: {path}")
+        measured = hashlib.sha256(payload).hexdigest()
         if measured != item["sha256"]:
             raise ValueError(f"checksum mismatch: {path}")
     print(json.dumps({"valid": True, "files": len(files), "scope": "edition inventory and local byte integrity only"}, sort_keys=True))
