@@ -71,7 +71,8 @@
     "examples/catalogue.json",
     "scripts/verify_manifest.py",
     "VALIDATION.md",
-    ".gitignore"
+    ".gitignore",
+    ".github/workflows/native-validation.yml"
   ],
   "manifest_exclusions": [
     "PROVENANCE.json (self-reference)",
@@ -83,6 +84,11 @@
       "path": ".github/workflows/atlas-flexible-zero-fail.yml",
       "sha256": "a994fbfd057daae40b1c94234b7a273c5ff6bcc276015f217ec33a0d2453eb06",
       "size": 383
+    },
+    {
+      "path": ".github/workflows/native-validation.yml",
+      "size": 889,
+      "sha256": "3b1de1da1b1e8ddb822fa6f8332d023b36655d985425482c19ee487aa2de3fee"
     },
     {
       "path": ".gitignore",
