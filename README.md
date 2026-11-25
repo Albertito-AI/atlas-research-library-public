@@ -55,3 +55,7 @@ not establish semantic support, source authenticity or scholarly quality.
 Use [CITATION.cff](CITATION.cff) for the title, author and version. The exact citation identifier can be added after deposit publication; no DOI is asserted in this source package.
 
 Validation establishes conformity with the implemented checks. It does not prove the truth of a research claim, authenticate an author, assess scholarly quality, confirm a reader's access, or determine whether copying is legally permitted. [VALIDATION.md](VALIDATION.md) records the checks performed for this edition. Preservation here means retaining identifiable files and their provenance; long-term institutional preservation depends on the repository where the release is deposited.
+
+## Sport governance teaching application
+
+Use the public evidence schema to catalogue a tribunal decision, a regulator’s order and a sponsor statement with dates and distinct evidentiary weight. [Exercise and records](https://github.com/Albertito-AI/sport-governance-and-administration/blob/main/cases/README.md) · [Albert Tan’s book and teaching companion](https://alberttansinhon.com/sport-governance/).
