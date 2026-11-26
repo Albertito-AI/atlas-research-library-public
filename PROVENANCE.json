@@ -98,8 +98,8 @@
     },
     {
       "path": "CITATION.cff",
-      "size": 1072,
-      "sha256": "947611e500dda247801e067becc7f07529c52fcbf45ba770dd4a87aff1030a44"
+      "size": 1053,
+      "sha256": "fb3f84372a8f947ebc382eb973238226c305ad542082d4c2f37ff8256b424ba3"
     },
     {
       "path": "LICENSE-CODE",
@@ -108,8 +108,8 @@
     },
     {
       "path": "README.md",
-      "size": 5177,
-      "sha256": "06dea8fffd5d470810d5f30c7c841b2ce945141c7db07b0da3d42d9611c6e6ff"
+      "size": 5573,
+      "sha256": "50591080e339307c7886841742a569a7fa2a51fc1ea537c9ed1b5ece50d6c404"
     },
     {
       "path": "RIGHTS.md",
