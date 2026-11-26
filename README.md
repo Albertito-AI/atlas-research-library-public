@@ -26,6 +26,8 @@ python3 scripts/verify_manifest.py
 
 The default catalogue holds three external public source references. `reference` means the validator has not acquired or verified their remote contents. The fictional local example is checked against its measured checksum. The test suite exercises changed bytes, unsafe paths, symlinks, duplicate records, credential-bearing URLs, missing provenance and overstated verification labels.
 
+When editing a listed file, review the change before updating its entry in `PROVENANCE.json`. For example, `wc -c < README.md` gives the revised byte count for `size`, and `sha256sum README.md` gives the digest for `sha256`. Run `python3 scripts/verify_manifest.py` before submitting the change.
+
 ## Publication scope
 
 The edition adapts the original library's formats, provenance and curation guidance for public use. Existing validation code and tests retain their MIT licence. The schema and three reference records are selected from the source repository. The provenance manifest identifies the exact source revision and the derivation of included files.
@@ -52,7 +54,7 @@ not establish semantic support, source authenticity or scholarly quality.
 
 ## Citation and limitations
 
-Use [CITATION.cff](CITATION.cff) for the title, author and version. The exact citation identifier can be added after deposit publication; no DOI is asserted in this source package.
+The version DOI identifies the public methods edition released on 13 November 2026. If your work uses subsequent changes to the catalogue or code, give the Git commit as well. [Archived edition 1.0.0](https://doi.org/10.5281/zenodo.24195063) · [Citation metadata](CITATION.cff).
 
 Validation establishes conformity with the implemented checks. It does not prove the truth of a research claim, authenticate an author, assess scholarly quality, confirm a reader's access, or determine whether copying is legally permitted. [VALIDATION.md](VALIDATION.md) records the checks performed for this edition. Preservation here means retaining identifiable files and their provenance; long-term institutional preservation depends on the repository where the release is deposited.
 

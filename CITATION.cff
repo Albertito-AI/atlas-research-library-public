@@ -1,8 +1,9 @@
 cff-version: 1.2.0
-message: "If you cite this selected methods edition, cite this version and its published archival identifier when available."
+message: "Please cite the archived version of this public methods edition."
 type: software
 title: "Atlas Research Library: Curation and Preservation Methods"
 version: "1.0.0"
+doi: "10.5281/zenodo.24195063"
 date-released: "2026-11-13"
 repository-code: "https://github.com/Albertito-AI/atlas-research-library-public"
 url: "https://github.com/Albertito-AI/atlas-research-library-public"
